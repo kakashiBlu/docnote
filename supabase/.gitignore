@@ -1,0 +1,9 @@
+.branches
+.temp
+functions
+seed_*
+
+# Supabase
+.branches
+.temp
+.env

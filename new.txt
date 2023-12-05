@@ -1,0 +1,55 @@
+import * as fs from 'fs';
+
+function applyMarkupTags(annotation: WorkspaceAnnotation, fileContent: string): string {
+  const { start_index, end_index, entity } = annotation;
+  const startTag = `<${entity}>`;
+  const endTag = `</${entity}>`;
+
+  // Insert startTag at start_index and endTag at end_index
+  const modifiedContent =
+    fileContent.slice(0, start_index) + startTag + fileContent.slice(start_index, end_index) + endTag + fileContent.slice(end_index);
+
+  return modifiedContent;
+}
+
+function buildJsonOutputsAndInsertTags(annotations: WorkspaceAnnotation[], filePath: string): void {
+  // Read the content of the file
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+
+  const outputAnnotations: JsonOutput[] = [];
+
+  annotations.forEach((annotation: WorkspaceAnnotation) => {
+    const { entity, start_index, end_index, text, attributes } = annotation;
+
+    const outputAnnotation = {
+      entity,
+      start_index,
+      end_index,
+      text,
+      attributes,
+    } as JsonOutput;
+
+    outputAnnotations.push(outputAnnotation);
+
+    // Apply markup tags to the file content
+    const modifiedContent = applyMarkupTags(annotation, fileContent);
+
+    // Update fileContent for the next iteration
+    fileContent = modifiedContent;
+  });
+
+  // Write the modified content back to the file
+  fs.writeFileSync(filePath, fileContent, 'utf8');
+
+  // Return the JSON representation if needed
+  const jsonOutput = JSON.stringify(outputAnnotations, null, 2);
+  console.log(jsonOutput);
+}
+
+// Example usage:
+const annotations: WorkspaceAnnotation[] = [
+  // Your annotations here
+];
+
+const filePath = 'path/to/your/file.txt';
+buildJsonOutputsAndInsertTags(annotations, filePath);
