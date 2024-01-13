@@ -38,7 +38,7 @@ function AccountOverview() {
     <Card shadow="xs" radius={5} p="xl">
       <Group position="apart">
         <Text size="lg" className={classes.title} weight={500}>
-          Welcome to Markup!
+          Welcome to Docnote!
         </Text>
       </Group>
 
@@ -46,7 +46,7 @@ function AccountOverview() {
         You're currently on the dashboard where you can manage workspaces and ontologies.
         Ready to get started? Follow the steps below:
       </Text>
-
+{/* 
       <Checkbox
         readOnly
         checked={tutorialProgress.readDocs}
@@ -81,13 +81,25 @@ function AccountOverview() {
         checked={tutorialProgress.createWorkspace}
         label="Create a workspace"
       />
+      <Checkbox
+        mt={15}
+        readOnly
+        // checked={tutorialProgress.createWorkspace}
+        label="Upload Document"
+      />
+      <Checkbox
+        mt={15}
+        readOnly
+        // checked={tutorialProgress.createWorkspace}
+        label="Click Annotate"
+      />
 
       <Checkbox
         mt={15}
         readOnly
         checked={tutorialProgress.exploreOntologies}
         label="Explore common ontologies"
-      />
+      /> */}
     </Card>
   )
 }

@@ -12,8 +12,8 @@ function Support() {
       </Title>
 
       <Text mt={20}>
-        If you have any questions, please feel free to reach out at <a href="mailto:sam@getmarkup.com">
-          sam@getmarkup.com
+        If you have any questions, please feel free to reach out at <a href="tirthadenver@gmail.com">
+          tirthadenver@gmail.com
         </a>
       </Text>
     </Container>

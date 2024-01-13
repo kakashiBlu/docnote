@@ -88,13 +88,13 @@ function Navbar(): JSX.Element {
 
   const navbarItems = (
     <>
-      <Link
+      {/* <Link
         to={Path.Docs}
         className={cx(classes.navItem, classes.navItemHover)}
         onClick={() => close()}
       >
         Docs
-      </Link>
+      </Link> */}
 
       {user === null &&
         <>
@@ -157,9 +157,9 @@ function Navbar(): JSX.Element {
                 Support
               </Menu.Item>
 
-              <Menu.Item component="a" href={Path.Faq}>
+              {/* <Menu.Item component="a" href={Path.Faq}>
                 FAQ
-              </Menu.Item>
+              </Menu.Item> */}
 
               <Divider />
 
@@ -180,15 +180,7 @@ function Navbar(): JSX.Element {
         className={cx(classes.navItem)}
       />
 
-      {/* <Group className={cx(classes.navItem)}>
-        <GitHubButton
-          href="https://github.com/samueldobbie/markup"
-          data-size="large"
-          data-show-count="true"
-        >
-          Star
-        </GitHubButton>
-      </Group> */}
+      
     </>
   )
 
@@ -285,15 +277,7 @@ function Navbar(): JSX.Element {
         className={cx(classes.navItem)}
       />
 
-      <Group className={cx(classes.navItem)}>
-        <GitHubButton
-          href="https://github.com/samueldobbie/markup"
-          data-size="large"
-          data-show-count="true"
-        >
-          Star
-        </GitHubButton>
-      </Group>
+      
     </>
   )
 

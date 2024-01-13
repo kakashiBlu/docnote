@@ -49,7 +49,7 @@ function SignUp(): JSX.Element {
         align="center"
         sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, fontWeight: 900 })}
       >
-        Welcome to Markup!
+        Welcome to Docnote!
       </Title>
 
       <Text color="dimmed" size="sm" align="center" mt={5}>

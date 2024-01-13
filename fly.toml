@@ -1,6 +1,6 @@
-# fly.toml file generated for markup on 2023-01-06T01:33:52Z
+# fly.toml file generated for docnote on 2023-01-06T01:33:52Z
 
-app = "markup"
+app = "docnote"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

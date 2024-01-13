@@ -44,7 +44,7 @@ const useStyles = createStyles((theme) => ({
     letterSpacing: -1,
     color: theme.colorScheme === "dark" ? theme.white : theme.black,
     marginBottom: theme.spacing.xs,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontFamily: `Gill Sans, ${theme.fontFamily}`,
 
     "@media (max-width: 520px)": {
       fontSize: 40,
@@ -114,26 +114,26 @@ function Home(): JSX.Element {
   return (
     <>
       <Container className={classes.wrapper} size={1400}>
-        <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
+        {/* <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
         <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
-        <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
+        <Dots className={classes.dots} style={{ right: 0, top: 60 }} /> */}
 
         <div className={classes.inner}>
           <Title className={classes.title}>
-            Turn text into{" "}
+            Annotate text {" "}
             <Text component="span" className={classes.highlight} inherit>
-              structured data
-            </Text>,<br />without the hassle.
+              with labels
+            </Text>,<br />easily.
           </Title>
 
           <Container p={20} size={600}>
             <Text size="lg" color="dimmed" className={classes.description}>
-              Markup is an annotation tool for rapidly building structured<br />datasets from free-text for NLP and ML. Powered by GPT-4.
+              An annotation tool for<br />datasets from free-text for NLP and ML.
             </Text>
           </Container>
 
           <div className={classes.controls}>
-            <Button
+            {/* <Button
               className={classes.control}
               size="lg"
               variant="default"
@@ -142,7 +142,7 @@ function Home(): JSX.Element {
               onClick={() => setOpenedDemoDomainModal(true)}
             >
               Try demo
-            </Button>
+            </Button> */}
 
             <Button
               className={classes.control}

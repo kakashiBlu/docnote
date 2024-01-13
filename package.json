@@ -1,11 +1,11 @@
 {
-  "name": "markup",
-  "version": "2.0.0",
+  "name": "Docnote",
+  "version": "1.0.0",
   "private": false,
   "author": {
-    "name": "Samuel Dobbie",
-    "email": "sam@getmarkup.com",
-    "url": "https://github.com/samueldobbie"
+    "name": "JUCSE",
+    "email": "",
+    "url": ""
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",

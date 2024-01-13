@@ -341,7 +341,7 @@ function ManageCollaboratorsModal({ workspace, openedModal, setOpenedModal }: Ma
                     Collaborators will have full edit access to the
                     workspace <b>{workspace.name}</b>. You can revoke
                     their access at any time. The provided email
-                    must be associated with a registered Markup user account.
+                    must be associated with a registered Docnote user account.
                   </>
                 }
                 {...form.getInputProps("email")}

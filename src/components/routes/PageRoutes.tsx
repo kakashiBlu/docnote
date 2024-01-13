@@ -22,50 +22,50 @@ function PageRoutes(): JSX.Element {
   return (
     <Routes>
       <Route path={Path.Home} element={
-        <DefaultRoute title="Markup Annotation Tool">
+        <DefaultRoute title="Docnote Annotation Tool">
           <Home />
         </DefaultRoute>
       } />
 
       <Route path={Path.SignUp} element={
-        <UnprotectedRoute title="Sign Up - Markup">
+        <UnprotectedRoute title="Sign Up - Docnote">
           <SignUp />
         </UnprotectedRoute>
       } />
 
       <Route path={Path.SignIn} element={
-        <UnprotectedRoute title="Sign In - Markup">
+        <UnprotectedRoute title="Sign In - Docnote">
           <SignIn />
         </UnprotectedRoute>
       } />
 
       <Route path={Path.ForgotPassword} element={
-        <UnprotectedRoute title="Forgot Password - Markup">
+        <UnprotectedRoute title="Forgot Password - Docnote">
           <ForgotPassword />
         </UnprotectedRoute>
       } />
 
       <Route path={Path.ResetPassword} element={
-        <ProtectedRoute title="Reset Password - Markup">
+        <ProtectedRoute title="Reset Password - Docnote">
           <ResetPassword />
         </ProtectedRoute>
       } />
 
       <Route path={Path.Dashboard} element={
-        <ProtectedRoute title="Dashboard - Markup">
+        <ProtectedRoute title="Dashboard - Docnote">
           <Dashboard />
         </ProtectedRoute>
       } />
 
       <Route path={Path.Setup} element={
-        <ProtectedRoute title="Setup Workspace - Markup">
+        <ProtectedRoute title="Setup Workspace - Docnote">
           <Setup />
         </ProtectedRoute>
       } />
 
       <Route path={Path.Annotate} element={
         <ProtectedRoute
-          title="Annotate Workspace - Markup"
+          title="Annotate Workspace - Docnote"
           exception={() => DEMO_PATHS.includes(window.location.pathname)}
         >
           <Annotate />
@@ -73,31 +73,31 @@ function PageRoutes(): JSX.Element {
       } />
 
       <Route path={Path.Support} element={
-        <DefaultRoute title="Support - Markup">
+        <DefaultRoute title="Support - Docnote">
           <Support />
         </DefaultRoute>
       } />
 
       <Route path={Path.Faq} element={
-        <DefaultRoute title="FAQ - Markup">
+        <DefaultRoute title="FAQ - Docnote">
           <Faq />
         </DefaultRoute>
       } />
 
       <Route path={Path.Docs} element={
-        <DefaultRoute title="Docs - Markup">
+        <DefaultRoute title="Docs - Docnote">
           <Docs />
         </DefaultRoute>
       } />
 
       <Route path={Path.Settings} element={
-        <ProtectedRoute title="Settings - Markup">
+        <ProtectedRoute title="Settings - Docnote">
           <Settings />
         </ProtectedRoute>
       } />
 
       <Route path={Path.NotFound} element={
-        <DefaultRoute title="Page Not Found - Markup">
+        <DefaultRoute title="Page Not Found - Docnote">
           <NotFound />
         </DefaultRoute>
       } />

@@ -36,7 +36,7 @@ function Tutorial(): JSX.Element {
           label="Bravo!"
           description={
             <>
-              That's all it takes to add a basic annotation with Markup. To start
+              That's all it takes to add a basic annotation with Docnote. To start
               working on more complex workflows, read the <Link
                 to={Path.Docs}
                 target="_blank"

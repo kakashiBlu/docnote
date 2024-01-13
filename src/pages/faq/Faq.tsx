@@ -15,7 +15,7 @@ function Faq() {
       <Accordion variant="filled" mt="xl">
         <Accordion.Item value="foss">
           <Accordion.Control>
-            Is Markup free and open source?
+            Is docnote free and open source?
           </Accordion.Control>
 
           <Accordion.Panel>
